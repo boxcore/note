@@ -12,4 +12,4 @@ mysqldump按条件查找的参数是 -where/-w，例子如：
 mysqldump -uroot -p123456 cocksucker_online sea_item_effect --extended-insert=false -c --where=" created<='2014-07-17 00:00:00'" > ~/web/db/test.sql
 
 ## 解决导出时时区错误问题
-mysqldump -uroot -p123456 cocksucker_online sea_item_effect --skip-tz-utc -c --where=" created<='2014-07-17 00:00:00'" > ~/web/db/test.sql
+mysqldump -uroot -p123456 cocksucker_online sea_item_effect --skip-tz-utc --where=" created<='2014-07-17 00:00:00'" > ~/web/db/test.sql
