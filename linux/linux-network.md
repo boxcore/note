@@ -42,9 +42,9 @@ Linux网络服务
 
 IP配置方法及自动获取ip: 
 
-> ifconfig eth0 192.168.0.10 将采用默认子网掩码
-> ifconfig eth0 192.168.0.10 netmask 255.255.255.252 (手动定义子网掩码)
-> ifconfig eth0 up(激活网卡）
+    ifconfig eth0 192.168.0.10 将采用默认子网掩码
+    ifconfig eth0 192.168.0.10 netmask 255.255.255.252 (手动定义子网掩码)
+    ifconfig eth0 up(激活网卡）
 
 
 ### 关闭网卡
