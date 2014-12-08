@@ -18,3 +18,6 @@ mysqldump -uroot -p123456 cocksucker_online sea_item_effect --skip-tz-utc --wher
 带上参数`--default-character-set=utf8`就指定默认为utf8的。例如：  
 mysqldump   -uroot  -p  --default-character-set=utf8   dbname tablename  >  bak.sql  
 mysql -uroot -p --default-character-set=utf8 dbname < bak.sql
+
+## 排除指定表导出
+`mysqldump -uroot -p123456 database --ignore-table=database.table1 --ignore-table=database.table2 > backup.sql`
