@@ -21,3 +21,8 @@ mysql -uroot -p --default-character-set=utf8 dbname < bak.sql
 
 ## 排除指定表导出
 `mysqldump -uroot -p123456 database --ignore-table=database.table1 --ignore-table=database.table2 > backup.sql`
+
+## 不锁表导出： `--lock-tables=0` 
+
+## 用mysqldump导出压缩文件
+`mysqldump -uroot -p --add-drop-table db_name | gzip > /path/db_back_name.sql.gz`
