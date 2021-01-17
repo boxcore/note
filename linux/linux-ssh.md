@@ -25,3 +25,23 @@ EOF
 ```
 
 上面的内容放到用户文件`~/.bashrc`中,下次登陆就有邮件提醒了!
+
+
+## ssh设置github使用多个key
+
+```bash
+cat >> ~/.ssh/config <<'EOF'
+# github
+    Host test.github.com
+    HostName github.com
+    # Port 8000
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/test
+EOF
+
+chmod 600 ~/.ssh/config
+
+cd <project dir>
+git clone git@test.github.com:yourname/test.git
+
+```
